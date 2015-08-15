@@ -1,0 +1,27 @@
+<<<<<<< HEAD
+<html>
+<head>
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+    <title>Playing with GitHub website</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	 <script src="jqueryaction.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Welcome to my GitHub Website</h1>
+    <p>This is a test website to see how useful hosting a website from GitHub can be.</p>
+</body>
+</html>
+=======
+<html>
+<head>
+	<LINK REL=StyleSheet HREF="style.css" TYPE="text/css">
+    <title>Playing with GitHub website</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	 <script src="jqueryaction.js" type="text/javascript"></script>
+</head>
+<body>
+    <h1>Welcome to my GitHub Website</h1>
+    <p>This is a test website to see how useful hosting a website from GitHub can be.</p>
+</body>
+</html>
+>>>>>>> 3ac3ce60a93cb4a926a9da4571996ff0347afd12

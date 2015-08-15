@@ -44,7 +44,7 @@ var DHTMLSprite = function(params) {
     
     $(document).ready(function() {
       var params = {
-        images: '/cogs.png',
+        images: 'cogs.png',
         imagesWidth: 256,
         width: 64,
         height: 64,

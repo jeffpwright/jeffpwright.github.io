@@ -11,7 +11,7 @@ var DHTMLSprite = function(params) {
         position: 'absolute',
         width: width,
         height: height,
-        backgroundImage: 'url(' + params.images + ')'
+        backgroundImage: 'url("' + params.images + '")'
       });
       
       var that = {
@@ -44,7 +44,7 @@ var DHTMLSprite = function(params) {
     
     $(document).ready(function() {
       var params = {
-        images: '/cogs.png',
+        images: 'cogs.png',
         imagesWidth: 256,
         width: 64,
         height: 64,
@@ -57,5 +57,4 @@ var DHTMLSprite = function(params) {
       sprite1.draw(64, 64);
       sprite2.draw(352, 192);
     });
-      }
-    })
+      

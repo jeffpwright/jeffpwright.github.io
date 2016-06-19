@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Objects in Javascript/JQuery</title>
+<title>Access the Dom in Javascript/JQuery</title>
 <meta charset="utf-8" />
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <script src="js/accessthedom.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="css/accessthedom.css">
 </head>
 <body>
+	<h3>Using Javascript to Access the DOM</h3>
 	<input id="textIn" type="text" />
 	<input type="button" onclick="textChange()" value="Update" />
 	<br>
@@ -15,6 +16,21 @@
 	<p id="p1"></p>
 	<span class="heading"></span>
 	<p id="p2"></p>
-	
+	<hr>
+	<h3>Using JQuery to Access the DOM</h3>
+	<span onclick="setEven()">Even</span>
+	<span onclick="setOdd()">Odd</span>
+	<span onclick="setFirst4()">First 4</span>
+	<p class="label">Planets</p>
+	<ul>
+		<li>Mecury</li>
+		<li>Venus</li>
+		<li>Earth</li>
+		<li>Mars</li>
+		<li>Jupiter</li>
+		<li>Saturn</li>
+		<li>Uranus</li>
+		<li>Neptune</li>
+	</ul>
 </body>
 </html>

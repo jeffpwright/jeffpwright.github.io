@@ -5,7 +5,7 @@ function clickHandler(e)
 
 $(document).ready(function()
 {
-	$("#div1").on({"click":clickHandler},{objId":"heading", "answer":"yes"});
+	$("#div1").on({"click":clickHandler},{objId:"heading", "answer":"yes"});
 	$(document).on("click", "#div2", {"objId":"heading", "answer":"no"}, clickHandler);
 });
 

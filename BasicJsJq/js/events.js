@@ -1,8 +1,13 @@
-function clickHandler(e,objId,num,msg)
+function clickHandler(e)
 {
-	var obj = document.getElementById(objId);
-	obj.innerHTML = "DIV " + num + " says " + msg + " at X position: " + e.screenX;
+	$("#"+e.data.objId).html(e.target.id + " says " + e.data.answer + " at X position: " + e.screenX);
 }
+
+$(document).ready(function()
+{
+	$("#div1").on({"click":clickHandler},{objId":"heading", "answer":"yes"});
+	$(document).on("click", "#div2", {"objId":"heading", "answer":"no"}, clickHandler);
+});
 
 function yesWrapper(e)
 {

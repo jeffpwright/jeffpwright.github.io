@@ -10,7 +10,7 @@ $("input:eq(0)").click(function()
 });
 $("input:eq(1)").click(function()
 {
-	var items = $("p").map(function()
+	var items = $("p").slice(0, 5).map(function()
 	{
 		var parts = $(this).html().split(" ");
 		return {color:parts[0], size:parts[1]};

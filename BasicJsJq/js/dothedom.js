@@ -24,5 +24,18 @@ $("input:eq(1)").click(function()
 			$("div").append(span);
 		}
 	});
-});	
+});
+
+function update()
+{
+	$("span").css("background-color", "lightgrey");
+	$("div").slice(1).each(function(i)
+	{
+		var $input =$(this).children("input:first");
+		var $value = $input.val();
+		var filter = "span:lt(" + $value + ")";
+		$input.siblings(filter).css("background-color", "blue");
+	});
+}	
+
 

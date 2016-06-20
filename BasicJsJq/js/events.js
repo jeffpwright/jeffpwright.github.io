@@ -1,5 +1,6 @@
 function clickHandler(e)
 {
+	alert(e.target.id + " says " + e.data.answer + " at X position: " + e.screenX);
 	$("#"+e.data.objId).html(e.target.id + " says " + e.data.answer + " at X position: " + e.screenX);
 }
 

@@ -10,7 +10,7 @@ $("input:eq(0)").click(function()
 });
 $("input:eq(1)").click(function()
 {
-	var items = $("p").slice(0, 5).map(function()
+	var items = $("p").slice(0, 6).map(function()
 	{
 		var parts = $(this).html().split(" ");
 		return {color:parts[0], size:parts[1]};
@@ -18,10 +18,10 @@ $("input:eq(1)").click(function()
 		for (var idx in items)
 		{
 			var item = items[idx];
-			var span = $("<span>" + item.color + "</span>");
+			var span = $("<span class='x'>" + item.color + "</span>");
 			var size = item.size*5;
-			span.css({"background-color":item.color, "font-size":item.size+"px", width:size, height:size});
-			$("div").append(span);
+			x.css({"background-color":item.color, "font-size":item.size+"px", width:size, height:size});
+			$("div:first").append(span);
 		}
 	});
 });

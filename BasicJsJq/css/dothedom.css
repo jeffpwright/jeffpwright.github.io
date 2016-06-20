@@ -10,7 +10,7 @@ div>span{
 	display:inline-block;
 	height:15px;
 	width:10px;
-	background-color:lightgrey;
+	background-color:silver;
 	margin:1px;
 	border-radius:50%;
 }
@@ -19,7 +19,7 @@ div>input{
 	width:20px;
 }
 
-lable{
+label{
 	display:inline-block;
 	width:60px;
 }

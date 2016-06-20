@@ -18,9 +18,9 @@ $("input:eq(1)").click(function()
 		for (var idx in items)
 		{
 			var item = items[idx];
-			var span = $("<span class='x'>" + item.color + "</span>");
+			var span = $("<span>" + item.color + "</span>");
 			var size = item.size*5;
-			x.css({"background-color":item.color, "font-size":item.size+"px", width:size, height:size});
+			span.css({"background-color":item.color, "font-size":item.size+"px", width:size, height:size});
 			$("div:first").append(span);
 		}
 	});

@@ -24,7 +24,8 @@ function noWrapper(e)
 
 function onloadHandler()
 {
-	document.getElementById("checkEmployee").click(alert("Hello"));
+	document.getElementById("checkEmployee").addEventListener('click', alert("Hello checkEmployee"), false);
+	document.getElementById("checkRegistered").addEventListener('click', alert("Hello checkRegistered"), false);
 	
 	var employee = document.getElementById("Employee");
 	employee.addEventListener('click', simpleClick, false);

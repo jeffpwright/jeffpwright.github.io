@@ -8,8 +8,8 @@ $(document).ready(function()
 {
 	$("#div1").on({"click":clickHandler},{objId:"heading", "answer":"yes"});
 	$(document).on("click", "#div2", {"objId":"heading", "answer":"no"}, clickHandler);
-	$("input").keypress(function(e) {inputHandler(e);});
-	$("span").click(function(e) {spanHandler(e);});
+	$("input").keypress(function(e) {inputHandler(e)});
+	$("span").click(function(e) {spanHandler(e)});
 });
 
 function inputHandler(e)
@@ -21,7 +21,7 @@ function inputHandler(e)
 function spanHandler(e)
 {
 	var chrCode = e.target.innerHTML.charCodeAt(0);
-	$("input").trigger({'type':'keypress', 'charcode':chrCode});
+	$("input").trigger({'type':'keypress', 'charCode':chrCode});
 }
 
 function yesWrapper(e)

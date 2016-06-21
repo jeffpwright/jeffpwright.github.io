@@ -17,3 +17,12 @@ span{
 	display:inline-block;
 	cursor:pointer;
 }
+
+p{
+	border:4px outset blue;
+	padding:3px;
+	color: white;
+	background-color:blue;
+	font-size: 30px;
+	font-weight:bold;
+}

@@ -10,7 +10,7 @@ $(document).ready(function()
 function mousePosition(e)
 {
 	e.stopPropagaion();
-	$(#screenSize").html(screen.width + "x" + screen.height);
+	$("#screenSize").html(screen.width + "x" + screen.height);
 	$("#colors").html(screen.colorDepth+"bit");
 	$("#browserSize").html(window.innerWidth + "x" + window.innerHeight);
 	$("#mousePosition").html("X:"+ e.screenX + " Y:" + e.screenY);

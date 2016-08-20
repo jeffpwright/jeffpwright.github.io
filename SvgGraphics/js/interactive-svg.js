@@ -1,6 +1,6 @@
 $(function(){
 
-	$("#stage").load('interactive.svg',function(response){
+	$("#stage").load('starscape.svg',function(response){
 
 		$(this).addClass("svgLoaded");
 		
